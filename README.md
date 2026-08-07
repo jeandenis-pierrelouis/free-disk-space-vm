@@ -72,12 +72,31 @@ This project also reinforced that native cleanup should be the first step, not t
 - Expand the project into a more policy-driven cleanup framework with separate profiles for servers, VDI machines, and end-user workstations.
 
 ## Screenshots
+Dummy data script
 
-Suggested screenshots for this repository:
+<img width="951" height="790" alt="Screenshot 2026-08-05 144328" src="https://github.com/user-attachments/assets/ce881e90-9553-4087-a9aa-52d528c40ddd" />
 
-- PowerShell console before and after cleanup showing reclaimed disk space.
-- Output from `Get-Volume` confirming available free space.
-- Example `cleanmgr /sageset` configuration with Recycle Bin left unchecked.
-- A simple workflow diagram showing notification, cleanup execution, reboot, and validation.
 
-Once images are available, this section can be updated with embedded screenshots and short captions.
+
+After creating dummy data
+
+<img width="932" height="395" alt="Screenshot 2026-08-05 144722" src="https://github.com/user-attachments/assets/57bb3fcd-0fd2-473a-abd5-38a526d35622" />
+
+
+
+State after script ran
+
+<img width="1301" height="221" alt="Screenshot 2026-08-07 115236" src="https://github.com/user-attachments/assets/2a4d3bf2-9132-45a8-a8cb-7a56e555d2f1" />
+
+
+
+After Sagerun was executed
+
+<img width="482" height="317" alt="Screenshot 2026-08-07 115601" src="https://github.com/user-attachments/assets/f305c5fe-0c3c-450e-981e-9bbbef890bb8" />
+<img width="481" height="307" alt="Screenshot 2026-08-07 115614" src="https://github.com/user-attachments/assets/c2382578-c516-4c71-b798-9de2c20f3607" />
+
+
+Error occurred when running restorehealth from script, machine needed to reboot to execute. 
+
+<img width="1001" height="161" alt="Screenshot 2026-08-05 150115" src="https://github.com/user-attachments/assets/f8a66606-05ef-4611-87ab-4b0fca1a4428" />
+
