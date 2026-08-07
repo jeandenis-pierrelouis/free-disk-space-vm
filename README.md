@@ -1,6 +1,3 @@
-# free-disk-space-vm
-Freeing Disk Space on VMs
-
 ## Overview
 
 This project is a PowerShell-based disk cleanup workflow designed to reclaim storage on Windows endpoints by using tools that are already built into the operating system. It is intended for environments ranging from startups to enterprise-managed endpoints, with a focus on practical cleanup actions that can be ran manually and automated more deeply over time.
