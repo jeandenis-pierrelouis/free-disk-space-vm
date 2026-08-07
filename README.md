@@ -41,7 +41,7 @@ To use this workflow, the following are needed:
 ## How to Use It
 
 1. Open an elevated PowerShell session on the endpoint, VM, or server.
-2. Run the cleanup script to stop relevant services, clear targeted temp and cache locations, remove update downloads, and perform servicing cleanup.
+2. Run the Disk Space Cleaner.ps1 script to stop relevant services, clear targeted temp and cache locations, remove update downloads, and perform servicing cleanup.
 3. Review the resulting free space and determine whether a reboot is required; which is recommended.
 4. If the machine is still critically low on space, use a tool such as WinDirStat for deeper analysis of application data, user files, or other uncommon storage consumers.
 
@@ -66,7 +66,7 @@ This project also reinforced that native cleanup should be the first step, not t
 
 - Add structured error handling so failures, especially DISM-related issues, can trigger a reboot recommendation or an automatic retry.
 - Preconfigure `cleanmgr /sageset` options on a golden image so `cleanmgr /sagerun` can be used immediately on cloned servers and workstations without per-device setup.
-- Integrate Active Directory or inventory-based logic to identify machines approaching a defined low-disk-space threshold.
+- Integrate Active Directory or inventory-based logic to identify machines approaching a defined low-disk-space threshold. Would be able to use the Disk Space Finder.ps1 to find machines low on space on AD > more tinkering is required since does not report correctly of what machines are online or not.
 - Trigger a scheduled task or maintenance prompt automatically when a device falls below a target free-space level.
 - Add centralized logging and reporting so technicians can track reclaimed space, failures, and reboot-required states.
 - Expand the project into a more policy-driven cleanup framework with separate profiles for servers, VDI machines, and end-user workstations.
